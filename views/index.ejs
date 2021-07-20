@@ -7,5 +7,37 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <p><hr></p>
+    <div>
+      <h2>Configuração da Ubuntu</h2>
+      <p>Nome da Máquina: devFurlan</p>
+      <p>User: alexfurlan</p>
+      <p>Password: "senha padrão"</p>
+    </div>
+    <hr>
+    <div>
+      <h2>Instalação de Programas</h2>
+      <h3>Desenvolvimento</h3>
+      <ul>
+        <li>VS Code</li>
+        <p>Instalação pela Loja de Aplicativos do Ubuntu</p>
+        <br>
+        <li>MySql</li>
+        <p>$ sudo install mysql-server</p>
+        <p>$ sudo mysql -u root</p>
+        <p>DEFINIR SENHA DO ROOT</p>
+        <p>> ALTER USER 'root'@'localhost IDENTIFIED WITH mysql_native BY 'nova_senha';</p>
+        <p>Sair e entrar novamente com o comando:</p>
+        <p>$ mysql -u root -p</p>
+        <p>CRIAR USUÁRIO E DAR PERMISSÕES</p>
+        <p>> CREATE USER 'user'@'localhost' IDENTIFIED BY 'senha_user';</p>
+        <p>> GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' WITH GRANT OPTION;</p>
+        <br>
+        <li>MySql Workbench</li>
+        <p>Instalação pela Loja de Aplicativos do Ubuntu</p>
+        <p>Após instalação, clicar em permissões e ativar as duas últimas opções, conforme imagem abaixo</p>
+        <img src="/img/workbench.png" alt="">
+      </ul>
+    </div>
   </body>
 </html>
