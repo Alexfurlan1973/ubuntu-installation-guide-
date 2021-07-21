@@ -31,7 +31,7 @@
         <P>> USE mysql;</P>
         <p>> UPDATE user SET plugin='mysql_native_password' WHERE User='root';</p>
         <p>DEFINIR SENHA DO ROOT</p>
-        <p>> ALTER USER 'root'@'localhost IDENTIFIED WITH mysql_native_password BY 'nova_senha';</p>
+        <p>> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'nova_senha';</p>
         <p>> FLUSH PRIVILEGES;</p>
         <p>Sair e entrar novamente com o comando:</p>
         <p>$ mysql -u root -p</p>
@@ -60,7 +60,7 @@
         <p>Dar permissão de execução ao arquivo installNVM.sh</p>
         <p>$ sudo chmod +x installNVM.sh</p>
         <p>Executar o arquivo installNVM.sh</p>
-        <p>$ ./installNVM.sh</p>
+        <p>$ sudo ./installNVM.sh</p>
         <p>Após terminar a instalação do NVM, fechar o terminal e abrir novamente</p>
         <p>Para conferir se a instalação correu tudo bem, digitar nvm -v</p>
         <p>$ nvm -v</p>
